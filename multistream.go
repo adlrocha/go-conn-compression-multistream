@@ -17,7 +17,7 @@ var DefaultNegotiateTimeout = time.Second * 60
 
 // Transport implements the compressedTransport intercace
 type Transport struct {
-	mux *mss.MultistreamMuxer
+	mux mss.MultistreamMuxer
 
 	tpts map[string]compression.CompressedTransport
 
